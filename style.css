@@ -43,6 +43,64 @@ header p {
   color: #555;
 }
 
+.contact {
+  font-size: 0.9rem;
+}
+
+.contact .sep {
+  margin: 0 0.3rem;
+  color: #999;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry-header {
+  margin-bottom: 0.35rem;
+}
+
+.entry-title {
+  font-weight: 600;
+}
+
+.entry-meta {
+  color: #555;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.entry-details {
+  list-style: none;
+  margin-top: 0.35rem;
+}
+
+.entry-details li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.4rem;
+  color: #444;
+  font-size: 0.92rem;
+}
+
+.entry-details li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #999;
+}
+
+.entry-note {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
 h2 {
   font-size: 0.85rem;
   font-weight: 600;
@@ -72,6 +130,14 @@ h2 {
   color: #999;
   font-size: 0.85rem;
   margin-left: 0.5rem;
+}
+
+.writing-label {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
 }
 
 footer {
