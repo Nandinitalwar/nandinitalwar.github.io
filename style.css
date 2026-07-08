@@ -356,6 +356,31 @@ article code {
   color: #a0a1a7;
 }
 
+.numbered-ideas {
+  list-style: none;
+  padding-left: 0 !important;
+  counter-reset: idea;
+  margin-top: 8px;
+}
+
+.numbered-ideas li {
+  counter-increment: idea;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 24px;
+  color: #3f3f46;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.numbered-ideas li::before {
+  content: counter(idea) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: #27272a;
+}
+
 .section-heading {
   font-size: 0.85rem;
   font-weight: 600;
