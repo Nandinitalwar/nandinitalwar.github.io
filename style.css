@@ -93,6 +93,8 @@ code, kbd {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav a {
@@ -465,7 +467,7 @@ article code {
     text-align: center;
     flex-direction: column;
   }
-  .nav { margin-top: 16px; }
+  .nav { margin-top: 16px; justify-content: center; }
   .header { margin-bottom: 32px; }
 }
 
