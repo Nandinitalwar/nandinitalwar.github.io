@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Labs — Nandini Talwar</title>
+  <meta name="theme-color" content="#fff">
+  <link rel="icon" href="/media/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/media/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="inner">
+    <div class="me">
+      <img class="avatar" src="/media/profile.jpg" alt="Nandini Talwar">
+      <div>
+        <a class="name" href="/" translate="no">Nandini Talwar</a>
+        <div class="title">Software Engineer</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <span class="sep">/</span>
+      <a href="/about">About</a>
+      <span class="sep">/</span>
+      <a href="/education-research">Education Research</a>
+      <span class="sep">/</span>
+      <a href="/education-labs" class="active">Education Labs</a>
+      <span class="sep">/</span>
+      <a href="/teaching">Teaching</a>
+      <span class="sep">/</span>
+      <a href="/writing">Writing</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="content">
+    <h1 style="margin-bottom: 16px">Education Labs at Anthropic</h1>
+    <p class="section-summary">Three proposals for how Claude could strengthen STEM teacher training in low-income schools — drawn from my <a href="/education-research">field research</a> on the Agastya model in Mumbai's municipal schools and from products I've shipped that use AI to teach and transfer expert knowledge.</p>
+
+    <p style="margin-bottom: 8px">The premise, from my research, is that the binding constraint in low-income STEM classrooms isn't student ability — it's teacher capacity. There are too few well-trained STEM teachers, they carry impossible loads, and they rarely get coaching. The highest-leverage place for AI is not replacing the teacher but multiplying a good one. Each idea below is a lab that trains, coaches, or amplifies teachers rather than routing around them.</p>
+
+    <h2 class="section-heading">1 · The STEM Co-Teacher</h2>
+    <p class="idea-tag">An AI teacher-training companion for under-resourced STEM educators</p>
+    <div class="entry">
+      <ul class="entry-details">
+        <li><strong>Problem:</strong> Municipal-school teachers are often assigned STEM subjects outside their training and get little ongoing support, so lessons default to rote memorization</li>
+        <li><strong>What Claude does:</strong> Generates syllabus-aligned, hands-on lesson plans; models Socratic questioning the teacher can practice against; and offers just-in-time coaching ("a student is stuck on fractions — here are three concrete ways to reteach it")</li>
+        <li><strong>Grounded in my research:</strong> Directly operationalizes Agastya's train-the-trainer model, which I studied in the field — it scales the human, inquiry-driven core rather than replacing it</li>
+        <li><strong>Pilot:</strong> A cohort of BMC teachers in Dadar, Mahim, and Colaba, measuring change in lesson quality, teacher confidence, and student engagement over one term</li>
+      </ul>
+    </div>
+
+    <h2 class="section-heading">2 · The Low-Bandwidth Tutor</h2>
+    <p class="idea-tag">A multilingual, adaptive STEM tutor that reaches students where they already are</p>
+    <div class="entry">
+      <ul class="entry-details">
+        <li><strong>Problem:</strong> One teacher can't give 60 students one-on-one time, and most edtech assumes reliable devices and bandwidth that these classrooms don't have</li>
+        <li><strong>What Claude does:</strong> Delivers patient, one-on-one explanation over SMS and WhatsApp in a student's own language (Hindi, Marathi), adapting to each learner's pace — and gives the teacher a dashboard of where the class is struggling</li>
+        <li><strong>Grounded in my work:</strong> I've shipped exactly this delivery model — <a href="/education-research">Pinch</a> runs a conversational AI over Twilio SMS and WhatsApp Business to ~200 weekly users, and my <a href="/education-research">AI-native curriculum paper</a> argues low-bandwidth tutors can partially close the teacher-shortage gap</li>
+        <li><strong>Pilot:</strong> Supplement one teacher's classroom with after-hours tutoring, measuring homework completion and concept retention against a control section</li>
+      </ul>
+    </div>
+
+    <h2 class="section-heading">3 · The Master-Teacher Amplifier</h2>
+    <p class="idea-tag">Capture what great teachers do, then make it reusable feedback at scale</p>
+    <div class="entry">
+      <ul class="entry-details">
+        <li><strong>Problem:</strong> A school's best teachers are a scarce, non-scalable resource, and grading plus feedback eat the hours teachers would rather spend teaching</li>
+        <li><strong>What Claude does:</strong> Captures a master teacher's explanations and worked examples into reusable teaching assets, and drafts individualized feedback on student work for the teacher to approve — keeping a human in the loop</li>
+        <li><strong>Grounded in my work:</strong> Mirrors <a href="/education-research">Skinopsis</a>, where I built AI to capture doctors' spoken expertise into structured output, and my TA work automating grading to cut turnaround by 70% so feedback reached students faster</li>
+        <li><strong>Pilot:</strong> Deploy in a teacher-scarce subject, measuring hours returned to teachers and speed and quality of feedback students receive</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 32px; color: #616e7c;">Across all three, the through-line is the same conviction from my research and my products: AI's role in education is to make one good teacher reach many, especially where teachers are scarcest.</p>
+
+  </div>
+</main>
+
+<footer id="footer">
+  <div>&copy; 2026 Nandini Talwar. All rights reserved.</div>
+  <div class="footer-icons">
+    <a href="https://github.com/NandiniTalwar" class="footer-icon footer-icon-github"><svg width="25" height="24" viewBox="0 0 98 96" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_labs)"><path d="M41.4395 69.3848C28.8066 67.8535 19.9062 58.7617 19.9062 46.9902C19.9062 42.2051 21.6289 37.0371 24.5 33.5918C23.2559 30.4336 23.4473 23.7344 24.8828 20.959C28.7109 20.4805 33.8789 22.4902 36.9414 25.2656C40.5781 24.1172 44.4062 23.543 49.0957 23.543C53.7852 23.543 57.6133 24.1172 61.0586 25.1699C64.0254 22.4902 69.2891 20.4805 73.1172 20.959C74.457 23.543 74.6484 30.2422 73.4043 33.4961C76.4668 37.1328 78.0937 42.0137 78.0937 46.9902C78.0937 58.7617 69.1934 67.6621 56.3691 69.2891C59.623 71.3945 61.8242 75.9883 61.8242 81.252L61.8242 91.2051C61.8242 94.0762 64.2168 95.7031 67.0879 94.5547C84.4102 87.9512 98 70.6289 98 49.1914C98 22.1074 75.9883 0 48.9043 0C21.8203 0 0 22.1074 0 49.1914C0 70.4375 13.4941 88.0469 31.6777 94.6504C34.2617 95.6074 36.75 93.8848 36.75 91.3008L36.75 83.6445C35.4102 84.2188 33.6875 84.6016 32.1562 84.6016C25.8398 84.6016 22.1074 81.1563 19.4277 74.7441C18.375 72.1602 17.2266 70.6289 15.0254 70.3418C13.877 70.2461 13.4941 69.7676 13.4941 69.1934C13.4941 68.0449 15.4082 67.1836 17.3223 67.1836C20.0977 67.1836 22.4902 68.9063 24.9785 72.4473C26.8926 75.2227 28.9023 76.4668 31.2949 76.4668C33.6875 76.4668 35.2187 75.6055 37.4199 73.4043C39.0469 71.7773 40.291 70.3418 41.4395 69.3848Z" fill="currentColor"/></g><defs><clipPath id="clip0_labs"><rect width="98" height="96" fill="white"/></clipPath></defs></svg></a>
+    <a href="https://linkedin.com/in/nandini-talwar" class="footer-icon footer-icon-linkedin"><svg fill="none" height="24" viewBox="0 0 40 40" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M37 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V37C0 37.7956 0.316071 38.5587 0.87868 39.1213C1.44129 39.6839 2.20435 40 3 40H37C37.7956 40 38.5587 39.6839 39.1213 39.1213C39.6839 38.5587 40 37.7956 40 37V3C40 2.20435 39.6839 1.44129 39.1213 0.87868C38.5587 0.316071 37.7956 0 37 0ZM12 34H6V16H12V34ZM9 12.5C8.31237 12.4803 7.64577 12.2585 7.0835 11.8622C6.52123 11.4658 6.08823 10.9126 5.83859 10.2716C5.58895 9.63053 5.53375 8.93016 5.67988 8.25794C5.82601 7.58573 6.16699 6.97148 6.66023 6.49195C7.15346 6.01242 7.77707 5.68887 8.45313 5.56173C9.12919 5.43458 9.82773 5.50949 10.4615 5.77708C11.0952 6.04468 11.636 6.49309 12.0164 7.0663C12.3967 7.6395 12.5997 8.31208 12.6 9C12.5842 9.9407 12.1967 10.8369 11.5221 11.4927C10.8475 12.1486 9.94077 12.5107 9 12.5ZM34 34H28V24.52C28 21.68 26.8 20.66 25.24 20.66C24.7826 20.6905 24.3358 20.811 23.9251 21.0146C23.5144 21.2183 23.148 21.5011 22.847 21.8467C22.5459 22.1924 22.3161 22.5941 22.1708 23.0289C22.0254 23.4636 21.9674 23.9228 22 24.38C21.9901 24.4731 21.9901 24.5669 22 24.66V34H16V16H21.8V18.6C22.3851 17.71 23.1889 16.9851 24.1344 16.4949C25.0799 16.0046 26.1355 15.7653 27.2 15.8C30.3 15.8 33.92 17.52 33.92 23.12L34 34Z" fill="currentColor"/></svg></a>
+  </div>
+</footer>
+
+</body>
+</html>
