@@ -467,7 +467,7 @@ article code {
     text-align: center;
     flex-direction: column;
   }
-  .nav { margin-top: 16px; justify-content: center; }
+  .nav { margin-top: 16px; justify-content: center; width: 100%; }
   .header { margin-bottom: 32px; }
 }
 
