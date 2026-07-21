@@ -526,6 +526,102 @@ article code {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
+/* ── Projects grid ── */
+
+.content-wide {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.proj-lede {
+  color: #616e7c;
+  font-size: 1rem;
+  margin: -16px 0 32px;
+  max-width: 560px;
+}
+
+.proj-grid {
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.proj-card {
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ececec;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+.proj-card:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
+}
+
+.proj-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.proj-card-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.proj-card-date {
+  font-size: 0.78rem;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.proj-card-light { background: #fafafa; color: #27272a; }
+.proj-card-orange { background: #f2530b; color: #fff; }
+.proj-card-dark { background: #111214; color: #f4f4f5; }
+
+.proj-card-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.proj-card-body {
+  padding: 12px 16px 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+  color: #52525b;
+  line-height: 1.55;
+}
+
+.proj-card-cta {
+  display: block;
+  padding: 10px 16px;
+  border-top: 1px solid #ececec;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #52525b;
+  background: #fafafa;
+}
+
+.proj-card:hover .proj-card-cta {
+  color: #27272a;
+}
+
+@media (max-width: 640px) {
+  .proj-grid {
+    column-count: 1;
+  }
+}
+
 /* ── Footer ── */
 
 #footer {
